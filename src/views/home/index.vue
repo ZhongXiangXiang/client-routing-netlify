@@ -26,7 +26,7 @@ console.log(2223, route);
 getPets(route.params.name);
 let animalInfo = ref({});
 async function getPets(name) {
-  const res = await axios.get(`/.netlify/functions/animals/${name}`);
+  const res = await axios.get(`/.netlify/functions/animal/${name}`);
   animalInfo.value = res.data;
 }
 

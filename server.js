@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 app.use(express.static(path.resolve(__dirname, 'dist')));
 
-app.get('/api/animals/meowsalot', (req, res) => {
+app.get('/api/animal/meowsalot', (req, res) => {
   // tell browser that if it loaded this url in the last 10 seconds to use that if quickly switching between pages
   res.header('Cache-Control', 'max-age=10');
   res.json({
@@ -15,7 +15,7 @@ app.get('/api/animals/meowsalot', (req, res) => {
   });
 });
 
-app.get('/api/animals/barksalot', (req, res) => {
+app.get('/api/animal/barksalot', (req, res) => {
   res.header('Cache-Control', 'max-age=10');
   res.json({
     name: 'Barksalot',
@@ -25,7 +25,7 @@ app.get('/api/animals/barksalot', (req, res) => {
   });
 });
 
-app.get('/api/animals/purrsloud', (req, res) => {
+app.get('/api/animal/purrsloud', (req, res) => {
   res.header('Cache-Control', 'max-age=10');
   res.json({
     name: 'Purrsloud',
