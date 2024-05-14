@@ -3,7 +3,7 @@
     <h2>home page</h2>
     <button @click="toAnimal('meowsalot')">meowsalot</button>
     <button @click="toAnimal('barksalot')">barksalot</button>
-    <button @click="toAnimal('Purrsloud')">Purrsloud</button>
+    <button @click="toAnimal('purrsloud')">purrsloud</button>
     <div>
       <h3>
         {{ animalInfo.name }}
